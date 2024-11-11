@@ -1,13 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beles robox</title>
+    <title>Buton Yönlendirme</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #firstButton:disabled {
+            background-color: grey;
+            cursor: not-allowed;
+        }
+        #secondButton {
+            background-color: grey;
+            cursor: not-allowed;
+            color: #fff;
+        }
+        #secondButton.enabled {
+            background-color: green;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1> Robux sitesine gide bilmek için butona basıp abone olun.
-    <button>Abone olmak için buton</buttonhttps://www.youtube.com/@Kodkedi?sub_confirmation=1>
-    <p></p>
+
+    <button id="firstButton" onclick="redirectToYoutube()">YouTube'a Git</button>
+    <button id="secondButton" class="disabled" onclick="redirectToNolur()" disabled>Nolur.com'a Git</button>
+
+    <script>
+        function redirectToYoutube() {
+            // Kullanıcıyı YouTube'a yönlendir
+            window.location.href = "https://www.youtube.com/@Kodkedi?sub_confirmation=1";
+
+            // İlk butonu devre dışı bırak ve rengini gri yap
+            const firstButton = document.getElementById("firstButton");
+            firstButton.disabled = true;
+
+            // İkinci butonu etkinleştir ve rengini yeşil yap
+            const secondButton = document.getElementById("secondButton");
+            secondButton.disabled = false;
+            secondButton.classList.add("enabled");
+        }
+
+        function redirectToNolur() {
+            // Kullanıcıyı nolur.com'a yönlendir
+            window.location.href = "https://nolur.com";
+        }
+    </script>
+
 </body>
 </html>
