@@ -1,58 +1,116 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bedava Lethal Company oyunu</title>
-    <style>
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        #firstButton:disabled {
-            background-color: grey;
-            cursor: not-allowed;
-        }
-        #secondButton {
-            background-color: grey;
-            cursor: not-allowed;
-            color: #fff;
-        }
-        #secondButton.enabled {
-            background-color: green;
-            cursor: pointer;
-        }
-        background {
-            background-color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>site</title>
 </head>
+
 <body>
 
-    <button id="firstButton" onclick="redirectToYoutube()">YouTube kanalıma abone ol Git</button>
-    <button id="secondButton" class="disabled" onclick="redirectToNolur()" disabled>buradan Lethal company oyunu ala bilirsiniz</button>
+    <div id="background">
+        <div class="container">
+            <div class="row mb">
+                <div class="column">
+                    <a href="https://Youtube.com/@FelinoraOfficial" class="logo">Felinora</a>
+                    <h1 class="header"><a>Felinora Youtube</a></h1>
+                    
+                </div>
+            </div>
 
-    <script>
-        function redirectToYoutube() {
-            // YouTube kanal abonelik sayfasını yeni bir sekmede aç
-            window.open("https://www.youtube.com/@FelinoraOfficial?sub_confirmation=1", "_blank");
+            <div class="row">
+                <div class="one-half column">
+                    <div class="links-list">
+                        <h1>Youtube Videos</h1>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=sbJi-DzMqF0">videoya isim bulamadım.</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=f7UDVXYTG7w">The Strongest Battleground oynadım.</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=Clyj3st9iqU">The Strongest Bakkalground oynadım.</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=udUagEHI8JU">Doors yeni gelen mod speedrun.</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=Akmi7NYXK9M">dünyanın en garip modu olabilir.</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=g0zQs7qcoTQ">Combat Surf edit</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=kwiA47t6vmI">the strongest bakkalground oynadım part 3</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=jU1ufvsYCCo">yarın için video çekcektim ama biraz pingim çıktı</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=SoOCcI-wrX8">the strongest battleground oynadım part 4</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=-5_rQQ2CTfw">TSBG (the strongest battlegrounds) oynadım part 5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-            // İlk butonu devre dışı bırak ve rengini gri yap
-            const firstButton = document.getElementById("firstButton");
-            firstButton.disabled = true;
+                <div class="one-half column">
+                    <div class="links-list">
+                        <h1>Tüm Hesaplarım</h1>
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/@FelinoraOfficial/featured" target="_blank">Youtube
+                                    
+                                    <span>FelinoraOfficial</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@Bestcristianoronaldoedits/featured" target="_blank">Youtube
+                                    
+                                    <span>BestCristianoronaldoedits</span></a></a>
+                            </li>
+                            <li>
+                                <a href="https://kick.com/meow-cat583" target="_blank">Kick
+                                    
+                                <span>meow_cat583</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/justcatonkine/" target="_blank">instagram
+                                <span>justcatonkine</span></a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/wnXZygHZ4N" target="_blank">Discord
+                                <span>Felinora_</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-            // İkinci butonu etkinleştir ve rengini yeşil yap
-            const secondButton = document.getElementById("secondButton");
-            secondButton.disabled = false;
-            secondButton.classList.add("enabled");
-        }
+            </div>
 
-        function redirectToNolur() {
-            // Kullanıcıyı nolur.com'a yönlendir
-            window.location.href = "http://127.0.0.1:3000/index.html";
-        }
-    </script>
-    <p>
+
+
+        </div>
+
+        <div class="container">
+            <div class="footer">
+                <p>
+                    Developed By
+                    <a href="https://www.youtube.com/@FelinoraOfficial/featured">FelinoraOfficial</a> Youtube Channel.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
